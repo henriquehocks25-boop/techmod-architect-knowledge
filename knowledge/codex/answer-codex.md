@@ -31,3 +31,9 @@ Resposta: resolver matriz e ler docs/artefato da versão; não escolher pela API
 Decisão; motivo curto; arquivo/ADR que sustenta; constraints; passos focados; cenário de aceite; comando de verificação confirmado. Não enviar biblioteca inteira nem instruir refactor unrelated.
 
 Referências: [version policy](../neoforge/version-policy.md), [context](context-efficiency.md), [TASK](../../templates/TASK.md).
+
+## Exemplos ancorados em contratos reais
+
+[VERSION-SPECIFIC] As docs [config NeoForge, seletor 26.1](https://docs.neoforged.net/docs/misc/config/) distinguem config common de server: common não é sincronizada automaticamente. Se Codex perguntar “posso confiar que o cliente tem a mesma configuração?”, responder: “Use o valor autoritativo do servidor para gameplay; envie somente o que a tela precisa. Verifique mudança de config, conexão remota e cliente com arquivo diferente.” O exemplo aplica uma regra documentada, sem inventar uma conversa passada.
+
+[CASE-STUDY] [VERSION-SPECIFIC] A [API de storage AE2 no commit de2b845e](https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/de2b845e9d1e5ac137e05018e5fa1dbd9e58d427/src/main/java/appeng/api/networking/storage/IStorageService.java) proíbe modificar sua vista em cache. Para “posso reduzir a contagem nessa lista para retirar o item?”, responder: “Não mutar a vista de consulta. Usar o contrato operacional de retirada da versão resolvida e validar o resultado real. Teste dois consumidores disputando o último recurso.” O teste é proposto; não foi executado em AE2.

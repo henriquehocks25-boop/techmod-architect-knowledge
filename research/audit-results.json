@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "edition_date": "2026-10-06",
+  "ok": true,
+  "counts": {
+    "Arquivos (sem .git)": 229,
+    "Markdown": 226,
+    "Palavras (sem relatório gerado)": 49377,
+    "Áreas knowledge": 34,
+    "Templates": 28,
+    "Checklists": 19,
+    "Playbooks": 9,
+    "Case studies": 14,
+    "Skills mapeadas": 29,
+    "Rotas operacionais": 22,
+    "Referências no manifesto": 88,
+    "Links internos verificados": 988,
+    "Links externos citados": 207,
+    "URLs externas distintas": 89
+  },
+  "errors": [],
+  "warnings": [],
+  "limits": [
+    "Não executa mods ou benchmarks.",
+    "Não verifica disponibilidade remota futura.",
+    "Revisão semântica e licenças dependem de evidência."
+  ]
+}

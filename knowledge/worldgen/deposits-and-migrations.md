@@ -24,4 +24,4 @@ Data-driven worldgen ainda tem schemas/APIs [VERSION-SPECIFIC]. Não afirmar que
 
 Seeds fixas, bordas de chunk, configs mínimo/máximo, dimensão ausente, estruturas próximas e mundo antigo. Teste restart durante migração; idempotência evita aplicar geração duas vezes.
 
-Fonte inicial: [NeoForge worldgen](https://docs.neoforged.net/docs/worldgen/). API de projeto deve seguir [política](../neoforge/version-policy.md).
+Fonte inicial: [NeoForge worldgen](https://docs.neoforged.net/docs/worldgen/biomemodifier/). API de projeto deve seguir [política](../neoforge/version-policy.md).
