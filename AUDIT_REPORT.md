@@ -10,7 +10,7 @@ Data desta edição: 2026-10-06. Auditoria documental reproduzível, sem executa
 |---|---|
 | Arquivos (sem .git) | 229 |
 | Markdown | 226 |
-| Palavras (sem relatório gerado) | 49377 |
+| Palavras (sem relatório gerado) | 49575 |
 | Áreas knowledge | 34 |
 | Templates | 28 |
 | Checklists | 19 |

@@ -18,7 +18,29 @@ Documentação oficial NeoForge, ModDevGradle, Gradle, Java, Blockbench e SemVer
 
 ## Git e publicação
 
-Os commits foram separados por arquitetura, fundamentos, sistemas básicos, industriais, UX/compatibilidade, qualidade, suporte ao Codex, estudos e auditoria. Consulte o histórico real com `git log --oneline`. O status de publicação é registrado pelo resultado do push e conferência remota na entrega final; um commit local, por si só, não comprova publicação.
+Os dez commits de construção/auditoria foram separados por fase; um commit adicional registra o status real de publicação. Todos permanecem no main local, sem force push ou alteração do histórico.
+
+| Commit | Fase |
+|---|---|
+| `0a0158b` | docs: establish knowledge architecture and templates |
+| `8d36a2d` | docs: add Minecraft NeoForge and build fundamentals |
+| `64fdd9c` | docs: add machine processing energy and logistics knowledge |
+| `4a17259` | docs: add advanced industrial systems |
+| `70f2513` | docs: add UX rendering multiplayer and compatibility knowledge |
+| `90d22e5` | docs: add performance testing migrations security and release knowledge |
+| `8986992` | docs: add Codex bridge checklists and operational playbooks |
+| `9a97417` | docs: add fourteen sourced tech mod case studies |
+| `0920337` | docs: add context routing glossary and source registry |
+| `10c9b16` | docs: audit and normalize knowledge base |
+
+**Publicação não concluída.** Em 2026-10-06 foram realizadas duas tentativas autorizadas:
+
+1. `git push --set-upstream origin main`: falhou por ausência de credencial HTTPS disponível, com prompt interativo desabilitado.
+2. Criação do README via conector GitHub: bloqueada com HTTP 403, “Resource not accessible by integration”. Nenhum arquivo foi criado remotamente.
+
+Os metadados do repositório informam permissão de push da conta, mas isso não concede escrita à integração instalada. A conferência posterior ainda retornou o repositório com tamanho zero. Não foi encontrado um caminho de autenticação SSH disponível, e a consulta de contas do Credential Manager também falhou no armazenamento de credenciais desta sessão.
+
+Para publicar, disponibilize autenticação Git HTTPS funcional ou autorize a integração GitHub com escrita de conteúdo no repositório. O próximo envio pode executar `git push --set-upstream origin main` a partir desta cópia auditada. Não é necessário reconstruir os documentos.
 
 ## Riscos e tópicos abertos
 
